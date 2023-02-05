@@ -363,17 +363,19 @@ border-radius: 50%;
         height: 88px;
         border: 1px solid #8E8F99;
         border-radius: 4px;
-        fill: #8E8F99;
+        fill: currentColor;
+    }
+    .customers-link:hover,
+    .customers-link:focus {
+        border: 1px solid #404BBF;
+        background-color:white;
+        fill:#404BBF;
+        color:#404BBF;
     }
     .customers-icon{
         height: 56px;
     }
-    .customers-link:hover,
-    .customers-link:focus {
-        border: 1px solid #8e8f99;
-        border-radius: 4px;
-        fill:#8e8f99;
-    }
+
 /*==================PORTFOLIO===============*/
 .portfolio-section{
     padding-top: 96px;
@@ -439,13 +441,17 @@ border-radius: 50%;
 .example-gallery-item{
     flex-basis: calc((100% - (var(--indent) * var(--items3))) / var(--items1));
 }
-/*==================FOOTER===============*/
+/*=footer-container=================FOOTER===============*/
 
 
 .section-footer{
 
 background: #2E2F42;
 padding:100px 0;
+}
+.footer-container{
+    display: flex;
+    
 }
 .footer-logo{
 font-family: "Raleway";
@@ -480,7 +486,10 @@ color: #F4F4FD;
 .socials-footer{
     width: 208px;
     color:white;
+    padding-left: 120px;
 }
+
+
 .socials-footer-list{
     display: flex;
     gap: 16px;
